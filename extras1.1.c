@@ -8,6 +8,7 @@ int main(void)
 {
     int *a = malloc(sizeof(int));
 
+    //Check if memory is succesfully allocated
     if (a == NULL)
     {
         printf("memory allocation failed");
@@ -16,5 +17,5 @@ int main(void)
 
     *a = 44;
     printf("%d", *a);
-    free(a);
+    free(a); //Free the allocated memory
 }
