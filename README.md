@@ -17,41 +17,41 @@ This repository is designed to provide you with a range of C programming exercis
 
 Here is a list of exercises included in this repository:
 
-1. **Malloc and Pointers:**
-   - Exercise 1.1: Allocate and print a single integer using `malloc`.
-   - Exercise 1.2: Dynamically allocate and populate an array of integers.
-   - Exercise 1.3: Calculate the sum of array elements using pointers.
-   - Exercise 1.4: Swap values of two arrays using pointers.
-   - Exercise 1.5: Sort an array using selection sort algorithm and pointers.
-   - Exercise 1.6: Concatenate two strings using dynamic memory allocation.
-   - Exercise 1.7: Frequency of characters in a string using pointers.
-   - Exercise 1.8: Basic text editor undo functionality using stack and pointers.
-   - Exercise 1.9: Find second largest element in an array using pointers.
-   - Exercise 1.10: Find common elements in two arrays using pointers.
+**Malloc and Pointers:**
+1. Write a program that allocates memory for a single integer using `malloc` and sets its value to 44. Print the value.
+2. Create a program that dynamically allocates memory for an array of `n` integers, where `n` is user-input. Populate the array with user-input values and display them.
+3. Implement a function that takes an array of integers and its size as parameters and returns the sum of its elements using pointers.
+4. Write a program that swaps the values of two arrays of integers using pointers, keeping the arrays' sizes the same.
+5. Create a program that sorts an array of integers in ascending order using the selection sort algorithm and pointers.
+6. Implement a function that concatenates two strings (char arrays) and returns the result. Use dynamic memory allocation for the concatenated string.
+7. Write a program to find the frequency of each character in a given string using a dynamically allocated array of counters.
+8. Create a program that simulates a basic text editor's undo functionality using a stack of strings and pointers.
+9. Implement a function to find the second largest element in an integer array using pointers.
+10. Write a program to find the common elements between two arrays of integers using pointers and dynamic memory allocation.
 
-2. **Linked Lists:**
-   - Exercise 2.1: Implement a simple linked list with insertion.
-   - Exercise 2.2: Count nodes in a linked list.
-   - Exercise 2.3: Find middle element of a linked list.
-   - Exercise 2.4: Delete all occurrences of a value from a linked list.
-   - Exercise 2.5: Check if a linked list is a palindrome.
-   - Exercise 2.6: Merge two sorted linked lists.
-   - Exercise 2.7: Detect cycle in a linked list.
-   - Exercise 2.8: Reverse a doubly linked list.
-   - Exercise 2.9: Sort a linked list using merge sort algorithm.
-   - Exercise 2.10: Implement circular doubly linked list.
+**Linked Lists:**
+1. Implement a simple linked list with a function to insert an element at the beginning.
+2. Create a program to count the number of nodes in a linked list.
+3. Write a function that takes a linked list as input and returns its middle element.
+4. Implement a function to delete all occurrences of a specific value from a linked list.
+5. Create a program that checks if a linked list is a palindrome (reads the same forwards and backwards).
+6. Write a program to merge two sorted linked lists into a single sorted list.
+7. Implement a function to detect a cycle in a linked list using Floyd's cycle-finding algorithm.
+8. Create a program to reverse a doubly linked list.
+9. Write a function that sorts a linked list using the merge sort algorithm.
+10. Implement a circular doubly linked list with functions for insertion, deletion, and traversal.
 
-3. **File I/O:**
-   - Exercise 3.1: Count occurrences of a character in a file.
-   - Exercise 3.2: Calculate average of integers in a file.
-   - Exercise 3.3: Read, sort, and write names to/from a file.
-   - Exercise 3.4: Replace words in a text file.
-   - Exercise 3.5: Read CSV, calculate average, and write to output file.
-   - Exercise 3.6: Binary file bitwise operations and write modified data.
-   - Exercise 3.7: Compress text file using run-length encoding.
-   - Exercise 3.8: Encrypt file content using substitution cipher.
-   - Exercise 3.9: Search pattern in large text file using memory-mapped file I/O.
-   - Exercise 3.10: Extract log entries from a log file.
+**File I/O:**
+1. Write a program to read a file character by character and count the number of occurrences of a specific character.
+2. Create a program to read integers from a file and calculate their average.
+3. Implement a program that reads a list of names from a file, sorts them alphabetically, and writes the sorted list back to the file.
+4. Write a program that reads a text file and replaces all occurrences of a specific word with another word.
+5. Create a program that reads a CSV file containing student names and their scores, calculates the average score, and writes the result to an output file.
+6. Implement a program that reads a binary file, performs bitwise operations on its contents, and writes the modified data to another binary file.
+7. Write a program to compress a text file using a basic run-length encoding algorithm.
+8. Create a program that encrypts the contents of a text file using a simple substitution cipher and saves it to another file.
+9. Implement a program that searches for a specific pattern in a large text file using memory-mapped file I/O for efficiency.
+10. Write a program that reads a log file containing timestamps and messages, and extracts and displays log entries for a specific date range.
 
 Each exercise is accompanied by a description that outlines the task or problem to solve. You will also find a corresponding solution file for each exercise.
 
