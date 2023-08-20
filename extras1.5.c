@@ -1,10 +1,9 @@
 /*Create a program that sorts an array of integers in ascending order using the selection sort 
 algorithm and pointers.*/
 
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
 
-//Functions prototype.
+// Function prototype.
 void SortArray(int *a, int length);
 
 int main(void)
@@ -13,14 +12,32 @@ int main(void)
     int length = sizeof(a) / sizeof(a[0]);
 
     SortArray(a, length);
+
+    return 0;
 }
+
 void SortArray(int *a, int length)
 {
-    int *end = a + length;
-    int max;
-    while (a < end)
+    int *min_ptr, *tmp_ptr;
+
+    for (int *i = a; i < a + length - 1; i++)
     {
-        max = *a;
+        min_ptr = i;
+        for (int *j = i + 1; j < a + length; j++)
+        {
+            if (*min_ptr > *j)
+            {
+                min_ptr = j;
+            }
+        }
+        
+        int tmp = *i;
+        *i = *min_ptr;
+        *min_ptr = tmp;
     }
-    
+
+    for (int *i = a; i < a + length; i++)
+    {
+        printf("%d ", *i);
+    }
 }
