@@ -31,21 +31,17 @@ int main(void)
 
 void SwapArrays(int *a, int*b, int length)
 {
-    //Dynamically allocating memory using malloc.
-    int *c = malloc(sizeof(int) * length);
+    int *end = a + length;
+    int *i = a;
+    int *j = b; 
 
-    //Checking if memory successfully allocated. 
-    if (c == NULL)
+    while (i < end)
     {
-        printf("memory allocation failed.");
-        return;
-    }
-
-    for (int i = 0 ; i < length ; i++)
-    {
-        c[i] = a[i];
-        a[i] = b[i];
-        b[i] = c[i]; 
+        int tmp = *i;
+        *i = *j;
+        *j = tmp;
+        i++;
+        j++;
     }
 
     printf("\nboth arrays after swapping values.");
@@ -60,6 +56,4 @@ void SwapArrays(int *a, int*b, int length)
     {
         printf("%d ", b[i]);
     }
-    //Free the allocated memory.
-    free(c);
 }
