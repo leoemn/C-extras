@@ -11,7 +11,7 @@ void CountFrequncy(int *counter, const char *str);
 void PrintFrequency(int *counter, int size);
 
 //Global Variable
-int size = 256;
+int size = 256; //To use extended ASCII
 
 int main(void)
 {
