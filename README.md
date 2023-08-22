@@ -27,7 +27,8 @@ Here is a list of exercises included in this repository:
 7. extras1.7 Write a program to find the frequency of each character in a given string using a dynamically allocated array of counters.
 8. extras1.8 Create a program that simulates a basic text editor's undo functionality using a stack of strings and pointers.
 9. extras1.9 Implement a function to find the second largest element in an integer array using pointers.
-10.extras1.10 Write a program to find the common elements between two arrays of integers using pointers and dynamic memory allocation.
+10. extras1.10 Write a program to find the common elements between two arrays of integers using pointers and dynamic memory allocation. 
+
 
 **Linked Lists:**
 1. extras2.1 Implement a simple linked list with a function to insert an element at the beginning.
