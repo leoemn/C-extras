@@ -14,13 +14,52 @@ int main(void)
     char *b = "World";
     int length = strlen(a) + strlen(b);
 
-    concate(a, b, length);
+    char *c = concate(a, b, length);
+    
+    //Printing concated string.
+    printf("%s", c);
+
+    //free allocated memory.
+    free(c);
+
+    return 0;
 }
 char *concate(char *a, char *b, int length)
 {
-    char *c = malloc(sizeof(char));
-    for(int i = 0 ; i < length ; i++)
+    //Allocating memory using malloc.
+    char *c = malloc(sizeof(char) + length + 2);
+
+    //Checking if memory allocation was successful.
+    if (c == NULL)
     {
-        
+        printf("Memory Allocation Failed");
+        return NULL;
     }
+
+    //Pointer to track current position in string.
+    char *tmp = c;
+
+    //Copying first string in c
+    while (*a)
+    {
+        *tmp = *a;
+        a++;
+        tmp++; 
+    }
+
+    //Adding space between both string.
+    *tmp = ' ';
+    tmp++;
+
+    //Concating second string in c
+    while (*b)
+    {
+        *tmp = *b;
+        b++;
+        tmp++;
+    }
+
+    //Adding null terminator to end the string.
+    *tmp = '\0';
+    return c;
 }
