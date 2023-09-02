@@ -27,5 +27,7 @@ int main(void)
         NewNode -> next = link1;
         link1 = NewNode;
     }
+    
+    for (int i = 0 ; i < 5 ; i++)
 
 }
